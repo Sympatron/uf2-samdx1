@@ -88,7 +88,7 @@ void setBootProt(int v) {
     exec_cmd(NVMCTRL_CTRLA_CMD_PBC);
     #endif
     #ifdef SAMD51
-    NVMCTRL->CTRLA.bit.WMODE = NVMCTRL_CTRLA_WMODE_MAN;
+    NVMCTRL->CTRLA.bit.WMODE = NVMCTRL_CTRLA_WMODE_MAN_Val;
 
     exec_cmd(NVMCTRL_CTRLB_CMD_EP);
     exec_cmd(NVMCTRL_CTRLB_CMD_PBC);
